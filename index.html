@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="images/logo.jpg">
+    <title>Wambui Loise's Portfolio</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Style the form container */
+        form {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: #333;
+        }
+
+        form h1 {
+            font-size: 50px;
+            font-weight: 600;
+            text-align: center;
+            color: white;
+        }
+
+        /* Style the input fields and textarea */
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: calc(100% - 20px);
+            /* Account for padding */
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: #fff;
+            text-decoration: none;
+        }
+
+        /* Ensure textarea is resizable */
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        /* Style the submit button */
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            color: #fff;
+            background-color: rgb(219, 11, 133);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        /* Change the button color on hover */
+        button[type="submit"]:hover {
+            background-color: rgba(219, 11, 132, 0.493);
+            color: black;
+        }
+
+        /* Add some spacing at the bottom of the form */
+        form {
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header section starts  -->
+
+    <header>
+
+        <div class="user">
+            <img src="images/profile.jpg" alt="Profile Picture">
+            <h3 class="name">Wambui Njoki</h3>
+            <h2 class="nickname"><span>(Loise)</span></h3>
+                <p class="post">Pastry Chef</p>
+        </div>
+
+        <button id="open-btn" class="btn">Tic Toc</button>
+        <div class="overlay" id="modal">
+            <div class="clock">
+                <button id="close-btn" class="btn">Close</button>
+                <h2>Time is</h2>
+                <div id="time" class="time">
+                    <div>
+                        <span id="hours">00</span>
+                        <span>Hours</span>
+                    </div>
+                    <div>
+                        <span id="minutes">00</span>
+                        <span>Minutes</span>
+                    </div>
+                    <div>
+                        <span id="seconds">--</span>
+                        <span>Seconds</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#education">education</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <h3>Hi!</h3>
+        <h1><span>I'm Loise Wambui Njoki</span></h1>
+        <p>Meet Loise, a talented and passionate pastry chef with a flair for creating exquisite desserts
+            and baked goods. With years of experience honing their craft in renowned kitchens and a
+            dedication to perfection, Loise brings creativity and innovation to every sweet creation.
+            From delicate pastries to decadent cakes, their artistry and attention to detail shine through
+            in every bite. Join Loise on a culinary journey that delights the senses and leaves a lasting
+            impression.
+        </p>
+        <a href="#about"><button class="btn">about me <i class="fas fa-user"></i></button></a>
+
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+
+        <h1 class="heading"> <span>about</span> me </h1>
+
+        <div class="row">
+
+            <div class="info">
+                <h3> <span> name : </span> Loise Wambui Njoki</h3>
+                <h3> <span> age : </span> 24 </h3>
+                <h3> <span> qualification : </span> Pastry Chef</h3>
+                <h3> <span> post : </span> Baker</h3>
+                <h3> <span> language : </span> English & Swahili </h3>
+                <!--
+                    <a href="#">
+                    <button class="btn"><i class="fab fa-facebook-f"></i> Follow </button>
+                </a>
+                -->
+            </div>
+
+            <div class="counter">
+
+                <div class="box">
+                    <span>12+</span>
+                    <h3>month of experience</h3>
+                </div>
+
+                <div class="box">
+                    <span>67+</span>
+                    <h3>project completed</h3>
+                </div>
+
+                <div class="box">
+                    <span>55+</span>
+                    <h3>happy clients</h3>
+                </div>
+
+                <div class="box">
+                    <span>12+</span>
+                    <h3>certificates awarded</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- education section starts  -->
+
+    <section class="education" id="education">
+
+        <h1 class="heading"> my <span>education</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2015</span>
+                <h3>Completed Primary School</h3>
+                <p>It was a 8 year journey of my Primary school life.
+                    Completed primary level at Kibiko primary School.</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2021</span>
+                <h3>Completed Secondary School</h3>
+                <p>It was a 4 year journey.
+                    Completed secondary level at Kimana girls secondary school.</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2023</span>
+                <h3>PASTRY COURSE</h3>
+                <p>After my Secondary KNEC exam, i joined Kenswed Technical Vocational Training College to pursue my
+                    Pastry course,
+                    And finally i got a Distinction.</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2023</span>
+                <h3>Attachment</h3>
+                <p>After finishing my Pastry course. I went for an attachment at Tomit Bakers
+                    Therefore gaining skills and experience in Bread making and Bread production.</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2023</span>
+                <h3>First Job</h3>
+                <p>finishing my attachment, i got my First job at Kenswed Organisation as a pastry Chef and a Gift shop
+                    manager.</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2024</span>
+                <h3>Other Skills</h3>
+                <p>During my time as a pastry chef I became proficient in Microsoft Office suit. Am a creative and an
+                    innovative pastry chef.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- education section ends -->
+
+    <!-- portfolio section starts  -->
+
+    <section class="portfolio" id="portfolio">
+
+        <h1 class="heading"> my <span>portfolio & Projects</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/1.jpg" alt="">
+                <div class="layer">
+                    <h3>MABLE CAKE</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/2.jpg" alt="">
+                <div class="layer">
+                    <h3>FONDANT DECORATION</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/3.jpg" alt="">
+                <div class="layer">
+                    <h3>WET ICING WITH EDIBLE PRINTS </h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/4.jpg" alt="">
+                <div class="layer">
+                    <h3>BUTTERFLY THEMED CAKE</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/5.jpg" alt="">
+                <div class="layer">
+                    <h3>COOKIES</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/6.jpg" alt="">
+                <div class="layer">
+                    <h3>TWO TIER BIRTHDAY CAKE</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/7.jpg" alt="">
+                <div class="layer">
+                    <h3>CHAPATI</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/8.jpg" alt="">
+                <div class="layer">
+                    <h3>PINEAPPLE UPSIDE DOWN CAKE</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/9.jpg" alt="">
+                <div class="layer">
+                    <h3>RED VELVET CAKE</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/10.jpg" alt="">
+                <div class="layer">
+                    <h3>SAMOSAS</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/11.jpg" alt="">
+                <div class="layer">
+                    <h3>VANILLA CAKE</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/12.jpg" alt="">
+                <div class="layer">
+                    <h3>FRUIT CAKE</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/13.jpg" alt="">
+                <div class="layer">
+                    <h3>PINEAPPLE CAKE</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/14.jpg" alt="">
+                <div class="layer">
+                    <h3>THANKSGIVING CAKE</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/15.jpg" alt="">
+                <div class="layer">
+                    <h3>TEA SNACKS</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/16.jpg" alt="">
+                <div class="layer">
+                    <h3>FRENCH TOAST</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/17.jpg" alt="">
+                <div class="layer">
+                    <h3>ROLEX </h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/18.jpg" alt="">
+                <div class="layer">
+                    <h3>BREAD ROLLS</h3>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- portfolio section ends -->
+
+    <!-- contact section starts  -->
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading"> <span>contact</span> me </h1>
+
+        <div class="row">
+
+            <div class="content">
+
+                <h3 class="title">contact info</h3>
+
+                <div class="info">
+                    <h3 class="lower"> <a href="mailto:loisewambuinjoki@gmail.com" target="_blank" style="color: white;"><i class="fas fa-envelope"></i>
+                            loisewambuinjoki@gmail.com</a></h3>
+                    <h3> <a href="tel:+254706856896" style="color: white;" target="_blank" ><i class="fas fa-phone"></i> +254-706856896</a></h3>
+                    <h3> <i class="fas fa-map-marker-alt"></i> Kibiko, Ngong</h3>
+                </div>
+
+                <form action="https://api.web3forms.com/submit" method="POST">
+
+                    <h1>Contact me</h1>
+
+                    <!-- Replace with your Access Key -->
+                    <input type="hidden" name="access_key" value="6b6cd938-ee45-4a7e-860c-6b0283465059">
+
+                    <!-- Form Inputs. Each input must have a name="" attribute -->
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <textarea name="message" placeholder="Send me a message" required></textarea>
+
+
+                    <button type="submit">Submit Form</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- contact section ends -->
+
+    <!-- footer section starts  -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Loise Wambui. All rights reserved.</p>
+                <p>Website created by <a href="#" target="_blank">RegalBkim</a></p>
+                <!--
+                    <div class="social-icons">
+                    <a href="#" target="_blank">
+                        <i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+                -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- footer section ends  -->
+
+    <!-- scroll top button  -->
+
+    <a href="#home" class="top">
+        <img src="images/scroll.png" alt="Scroll For Top">
+    </a>
+
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+    <script src="js/time.js"></script>
+
+</body>
+
+</html>
